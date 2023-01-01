@@ -5,9 +5,7 @@ import Home from './pages/home/Home'
 import About from './pages/about/AboutUs'
 import Contact from './pages/contact/Contact'
 import Login from './pages/login/Login'
-import Projects from './pages/projects/OurProjects'
-
-
+import Project from './pages/projects/Project'
 //styles
 import './App.css';
 
@@ -16,8 +14,20 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Switch>
-          <Route path='/'>
+          <Route exact path='/'>
             <Home />
+          </Route>
+          <Route  path='/about'>
+            <About />
+          </Route>
+          <Route  path='/login'>
+            <Login />
+          </Route>
+          <Route  path='/projects/:id'>
+            <Project />
+          </Route>
+          <Route  path='/contact'>
+            <Contact />
           </Route>
         </Switch>
       </BrowserRouter>

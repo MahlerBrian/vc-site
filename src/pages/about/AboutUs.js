@@ -1,5 +1,5 @@
 //styles
-import './aboutUs.css'
+import './AboutUs.css'
 
 
 
